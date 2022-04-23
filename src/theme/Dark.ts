@@ -1,0 +1,27 @@
+import Common from "./Common";
+
+export default {
+  name: "dark",
+  ...Common,
+  bg: `radial-gradient(ellipse at center, #ff00731a, transparent 40%),
+  radial-gradient(circle at top left, #ff007140, transparent 12%),
+  radial-gradient(circle at top right, #ff007140, transparent 15%),
+  radial-gradient(circle at bottom right, #ff007140, transparent 30%),
+  radial-gradient(circle at bottom left, #ff007140, transparent 25%),
+  linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(11,0,13,1) 100%)`,
+  surface: "#2a2a30",
+  dark: "#000000",
+  surfaceHover: "#2f2f35",
+  surfaceAlt: "#141416",
+  control: "#2a2a30",
+  toggleBG: "#1d1d1d",
+  toggleFG: "#2e2e2e",
+  toggleBorder: "#424244",
+  inputBG: "#27272880",
+  buttonBG: "#1f1f1f80",
+  buttonHoverBG: "#2d2d2d",
+  inputHoverBG: "#2d2d2d",
+  buttonFocusBG: "#29292b",
+  inputBorder: "#2f2f3080",
+  iconFilter: "invert(0.8)",
+};
