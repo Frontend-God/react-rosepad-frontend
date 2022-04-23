@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Banner from "./Banner";
+import CalculatorForm from "./CalculatorForm";
 import Connect from "./Connect";
 import Featured from "./Featured";
 import Hero from "./Hero";
@@ -53,6 +54,7 @@ const Home = ({ scroll }: any) => {
           <Featured />
           <Banner />
           <Roadmap />
+          <CalculatorForm />
           <Tokenomics />
           <Team />
           <Partners />

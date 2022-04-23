@@ -75,7 +75,7 @@ const Container: any = styled.button`
     transition: all 560ms cubic-bezier(0.075, 0.82, 0.165, 1);
     animation: 820ms ease 0s infinite normal none running
       ${({ animate, animateOnHover }: any) =>
-    (animate || animateOnHover) && Pulse};
+        (animate || animateOnHover) && Pulse};
     background-repeat: no-repeat;
   }
 
@@ -105,6 +105,7 @@ export default ({
   onClick = () => null,
   animate = false,
   animateOnHover = false,
+  style,
 }: any) => {
   return (
     <Container
@@ -113,6 +114,7 @@ export default ({
       animateOnHover={animateOnHover}
       onClick={() => onClick()}
       bg={bg}
+      style={style}
     >
       {stroked && <Inset />}
       <Label style={{ color: color || (stroked ? "#ff0073" : "white") }}>
